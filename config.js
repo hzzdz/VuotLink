@@ -1,0 +1,1 @@
+window.GETKEY_API="https://getkey-api.2mcnfmhghn.workers.dev";
