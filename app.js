@@ -102,8 +102,13 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
     if(!res.ok||!data.key)
       throw new Error(data.error||"Không thể nhận key.");
 
-    document.querySelector(".subtitle b").textContent=data.key;
-    toast("Nhận key thành công.");
+document.querySelector(".subtitle b").textContent=data.key;
+
+/* Xóa token khỏi URL sau khi nhận key */
+
+history.replaceState({}, document.title, window.location.pathname);
+
+toast("Nhận key thành công.");
   }catch(err){
     toast(err.message||"Không thể nhận key.");
   }
