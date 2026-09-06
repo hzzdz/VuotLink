@@ -214,5 +214,20 @@ h1{
     fill: none;
 
 }
+.option-icon.telegram,
+
+.option-icon.discord {
+
+    color: #fff;
+
+}
+
+.option-icon.telegram svg,
+
+.option-icon.discord svg {
+
+    color: #fff;
+
+}
 }
 
