@@ -5,8 +5,8 @@ window.GETKEY_CONFIG={
   logo:"IMG_0669.jpeg",
 
   // Điền link thật của bạn sau:
-  telegramAdmin:"#",
-  discordAdmin:"#",
-  telegramGroup:"#",
-  discordGroup:"#"
+  telegramAdmin:"https://t.me/Duizm",
+  discordAdmin:"https://discord.gg/uQazEfhg",
+  telegramGroup:"https://t.me/aimlockhzz",
+  discordGroup:"https://discord.gg/XGy5D7A75q",
 };
