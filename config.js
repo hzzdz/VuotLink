@@ -8,5 +8,5 @@ window.GETKEY_CONFIG={
   telegramAdmin:"https://t.me/Duizm",
   discordAdmin:"https://discord.gg/uQazEfhg",
   telegramGroup:"https://t.me/aimlockhzz",
-  discordGroup:"https://discord.gg/XGy5D7A75q",
+  discordGroup:"https://discord.gg/XGy5D7A75q"
 };
