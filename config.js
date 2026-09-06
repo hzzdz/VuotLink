@@ -1,5 +1,5 @@
 window.GETKEY_CONFIG={
-  api:"https://getkey-api.2mcnfmhghn.workers.dev",
+  api:"https://getkey-api.2mcnfmhgnh.workers.dev/",
 
   // Thêm ảnh logo sau:
   logo:"IMG_0669.jpeg",
