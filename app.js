@@ -65,11 +65,6 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
     const type=btn.dataset.type;
     closeModal("keyModal");
 
-    if(type==="vip"){
-      toast("KEY VIP đã được chọn.");
-      return;
-    }
-
     if(!API){
       toast("Chưa cấu hình API.");
       return;
