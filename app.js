@@ -112,3 +112,22 @@ history.replaceState({}, document.title, window.location.pathname);
     toast(err.message||"Không thể nhận key.");
   }
 })();
+$("copyKey").onclick=async()=>{
+
+  const key=$("generatedKey").textContent;
+
+  if(!key || key==="---") return;
+
+  try{
+
+    await navigator.clipboard.writeText(key);
+
+    toast("Đã sao chép key.");
+
+  }catch{
+
+    toast("Không thể sao chép key.");
+
+  }
+
+};
