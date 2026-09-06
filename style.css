@@ -181,4 +181,38 @@ h1{
   .main-button.primary{
     margin-top:32px!important;
   }
+  .option-icon svg {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: block;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
 }
+
+.option-icon.discord svg {
+
+    fill: currentColor;
+
+    stroke: none;
+
+}
+
+.option-icon.telegram svg {
+
+    fill: none;
+
+}
+}
+
