@@ -83,7 +83,7 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
       if(!res.ok||!data.redirectUrl)
         throw new Error(data.error||"Không tạo được link.");
 
-      location.href=data.redirectUrl;
+      window.location.assign(data.redirectUrl);
     }catch(err){
       toast(err.message||"Có lỗi xảy ra.");
     }
