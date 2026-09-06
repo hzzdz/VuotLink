@@ -240,5 +240,18 @@ h1{
   max-height: 24px !important;
 
 }
+.main-key-icon {
+
+  width: 22px !important;
+
+  height: 22px !important;
+
+  min-width: 22px !important;
+
+  max-width: 22px !important;
+
+  display: block !important;
+
+}
 }
 
