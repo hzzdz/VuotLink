@@ -261,5 +261,30 @@ h1{
   color: currentColor !important;
 
 }
+.subtitle{
+
+  position:relative;
+
+  margin-bottom:70px!important;
+
+}
+
+.subtitle::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+
+  right:0;
+
+  bottom:-35px;
+
+  height:1px;
+
+  background:#222;
+
+}
 }
 
