@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000">
+<title>AimLock HZZ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid"></div>
+
+<main class="wrap">
+  <section class="card">
+    <div class="inside">
+
+      <div class="system">○ &nbsp; SECURE KEY SYSTEM V2.0</div>
+
+      <!-- ĐỂ TRỐNG ẢNH - BẠN THÊM ẢNH SAU -->
+      <div class="logo-box" id="logoBox">
+        <img id="logo" src="" alt="">
+        <span>YOUR IMAGE</span>
+      </div>
+
+      <h1>AIMLOCK HZZ</h1>
+
+      <div class="key-title">
+        <span>—</span><b>• Key Free •</b><span>—</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong id="stock"></strong>
+          <small>KEYS CÒN LẠI</small>
+        </div>
+        <div class="stat">
+          <strong>FREE</strong>
+          <small>HOÀN TOÀN MIỄN PHÍ</small>
+        </div>
+      </div>
+
+      <button class="main-btn white" id="getKey">
+        <span class="icon">⚿</span>
+        <span>LẤY KEY MIỄN PHÍ</span>
+      </button>
+
+      <button class="main-btn" id="contactAdmin">
+        <span class="icon">♙</span>
+        <span>LIÊN HỆ ADMIN</span>
+      </button>
+
+      <button class="main-btn" id="joinGroup">
+        <span class="icon">♧</span>
+        <span>THAM GIA NHÓM</span>
+      </button>
+
+      <div class="note">Hệ thống key tự động · Miễn phí 100%</div>
+    </div>
+  </section>
+  <div class="copyright">© 2026 AimLock HZZ. All rights reserved.</div>
+</main>
+
+<!-- CHỌN KEY -->
+<div class="modal-bg" id="keyModal">
+  <div class="modal">
+    <button class="x" data-close="keyModal">×</button>
+    <div class="modal-label">GET LICENSE KEY</div>
+    <h2>CHỌN LOẠI KEY</h2>
+    <p>Chọn loại key bạn muốn nhận.</p>
+
+    <button class="option" data-type="free">
+      <span class="option-icon">⚿</span>
+      <span class="option-text">
+        <b>KEY FREE</b>
+        <small>Vượt link để nhận key miễn phí</small>
+      </span>
+      <span class="chevron">›</span>
+    </button>
+
+    <button class="option" data-type="vip">
+      <span class="option-icon">♛</span>
+      <span class="option-text">
+        <b>KEY VIP</b>
+        <small>Chọn để nhận key VIP</small>
+      </span>
+      <span class="chevron">›</span>
+    </button>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div class="modal-bg" id="adminModal">
+  <div class="modal">
+    <button class="x" data-close="adminModal">×</button>
+    <div class="modal-label">CONTACT</div>
+    <h2>LIÊN HỆ ADMIN</h2>
+    <p>Chọn nền tảng bạn muốn liên hệ.</p>
+
+    <a class="option link" id="telegramAdmin" href="#">
+      <span class="option-icon">➤</span>
+      <span class="option-text"><b>TELEGRAM</b><small>Liên hệ Admin qua Telegram</small></span>
+      <span class="chevron">›</span>
+    </a>
+
+    <a class="option link" id="discordAdmin" href="#">
+      <span class="option-icon">◉</span>
+      <span class="option-text"><b>DISCORD</b><small>Liên hệ Admin qua Discord</small></span>
+      <span class="chevron">›</span>
+    </a>
+  </div>
+</div>
+
+<!-- NHÓM -->
+<div class="modal-bg" id="groupModal">
+  <div class="modal">
+    <button class="x" data-close="groupModal">×</button>
+    <div class="modal-label">COMMUNITY</div>
+    <h2>THAM GIA NHÓM</h2>
+    <p>Chọn nền tảng để tham gia cộng đồng.</p>
+
+    <a class="option link" id="telegramGroup" href="#">
+      <span class="option-icon">➤</span>
+      <span class="option-text"><b>TELEGRAM</b><small>Tham gia nhóm Telegram</small></span>
+      <span class="chevron">›</span>
+    </a>
+
+    <a class="option link" id="discordGroup" href="#">
+      <span class="option-icon">◉</span>
+      <span class="option-text"><b>DISCORD</b><small>Tham gia nhóm Discord</small></span>
+      <span class="chevron">›</span>
+    </a>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
