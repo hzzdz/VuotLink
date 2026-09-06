@@ -250,7 +250,15 @@ h1{
 
   max-width: 22px !important;
 
+  min-height: 22px !important;
+
+  max-height: 22px !important;
+
   display: block !important;
+
+  flex-shrink: 0 !important;
+
+  color: currentColor !important;
 
 }
 }
