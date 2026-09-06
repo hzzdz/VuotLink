@@ -103,11 +103,11 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
 
 document.querySelector(".subtitle b").textContent=data.key;
 
-/* Xóa token khỏi URL sau khi nhận key */
+document.getElementById("generatedKey").textContent=data.key;
+
+openModal("keyResultModal");
 
 history.replaceState({}, document.title, window.location.pathname);
-
-toast("Nhận key thành công.");
   }catch(err){
     toast(err.message||"Không thể nhận key.");
   }
