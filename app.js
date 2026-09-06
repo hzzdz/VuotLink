@@ -72,7 +72,11 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
 
     try{
       toast("Đang tạo link...");
-      const res=await fetch(`${API}/api/start?type=free`);
+      const res=await fetch(
+
+  `${API}/api/start?type=${encodeURIComponent(type)}`
+
+);
       const data=await res.json();
 
       if(!res.ok||!data.redirectUrl)
