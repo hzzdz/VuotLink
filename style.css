@@ -229,5 +229,16 @@ h1{
     color: #fff;
 
 }
+.key-icon svg {
+
+  width: 24px !important;
+
+  height: 24px !important;
+
+  max-width: 24px !important;
+
+  max-height: 24px !important;
+
+}
 }
 
