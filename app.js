@@ -1,5 +1,28 @@
 const CFG=window.GETKEY_CONFIG||{};
 const API=CFG.api||"";
+async function loadKeyCount(){
+
+  try{
+
+    const res=await fetch(`${API}/api/stats`);
+
+    const data=await res.json();
+
+    if(data.success){
+
+      document.getElementById("keyCount").textContent=data.count;
+
+    }
+
+  }catch{
+
+    document.getElementById("keyCount").textContent="---";
+
+  }
+
+}
+
+loadKeyCount();
 const $=id=>document.getElementById(id);
 
 function openModal(id){
