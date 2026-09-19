@@ -159,7 +159,15 @@ if (backupBtn) {
 
   backupBtn.addEventListener("click", () => {
 
-    window.location.href = GETKEY_CONFIG.backupGetKey;
+    if (CFG.backupGetKey) {
+
+      window.location.href = CFG.backupGetKey;
+
+    } else {
+
+      toast("Chưa cấu hình web dự phòng.");
+
+    }
 
   });
 
