@@ -152,7 +152,8 @@ $("copyKey").onclick=async()=>{
     toast("Không thể sao chép key.");
 
   }
-  const backupBtn = document.getElementById("backupGetKey");
+};
+const backupBtn = document.getElementById("backupGetKey");
 
 if (backupBtn) {
 
@@ -164,4 +165,3 @@ if (backupBtn) {
 
 }
 
-};
