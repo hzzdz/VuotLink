@@ -5,7 +5,7 @@ window.GETKEY_CONFIG={
   logo:"IMG_0669.jpeg",
 
   // Điền link thật của bạn sau:
-  backupGetKey: "https://getkey.proxyvuyp.io.vn/index.php?seller=hzz2182026"
+  backupGetKey: "https://getkey.proxyvuyp.io.vn/index.php?seller=hzz2182026",
   telegramAdmin:"https://t.me/Duizm",
   discordAdmin:"https://discord.gg/uQazEfhg",
   telegramGroup:"https://t.me/aimlockhzz",
