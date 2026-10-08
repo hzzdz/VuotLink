@@ -5,7 +5,7 @@ window.GETKEY_CONFIG={
   logo:"IMG_0669.jpeg",
 
   // Điền link thật của bạn sau:
-  menukey: "https://menu.aimlockhzz.xyz",
+  menuKey: "https://menu.aimlockhzz.xyz",
   backupGetKey: "https://getkey.proxyvuyp.io.vn/index.php?seller=hzz2182026",
   telegramAdmin:"https://t.me/Duizm",
   discordAdmin:"https://discord.gg/uQazEfhg",
