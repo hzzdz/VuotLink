@@ -176,7 +176,21 @@ const menuKey = document.getElementById("menuKey");
 
 if (menuKey) {
 
-  menuKey.href = CFG.menuKey || "#";
+  menuKey.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    if (CFG.menuKey) {
+
+      window.location.href = CFG.menuKey;
+
+    } else {
+
+      toast("Chưa cấu hình link Menu.");
+
+    }
+
+  });
 
 }
 
