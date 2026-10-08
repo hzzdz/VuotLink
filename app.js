@@ -172,4 +172,11 @@ if (backupBtn) {
   });
 
 }
+const menuKey = document.getElementById("menuKey");
+
+if (menuKey) {
+
+  menuKey.href = CFG.menuKey || "#";
+
+}
 
