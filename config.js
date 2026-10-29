@@ -6,7 +6,7 @@ window.GETKEY_CONFIG={
 
   // Điền link thật của bạn sau:
   menuKey: "https://menu.aimlockhzz.xyz",
-  backupGetKey: "https://getkey.proxyvuyp.io.vn/index.php?seller=hzz2182026",
+  backupGetKey: "https://hungzizc.xyz",
   telegramAdmin:"https://t.me/Duizm",
   discordAdmin:"https://discord.gg/uQazEfhg",
   telegramGroup:"https://t.me/aimlockhzz",
