@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>AimLock HZZ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-grid"></div>
+
+<main class="container">
+  <section class="main-card">
+    <div class="card-inner">
+
+      <div class="system-tag"> &nbsp; SECURE KEY SYSTEM V1.4</div>
+
+      <!-- Để trống ảnh, thêm ảnh sau trong config.js -->
+      <div class="logo-placeholder" id="logoBox">
+        <img id="logo" alt="">
+      </div>
+
+      <h1>AIMLOCK HZZ</h1>
+      <div class="subtitle">
+        <span>—</span><b>Key Free</b><span>—</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <strong id="keyCount">---</strong>
+          <small>KEYS CÒN LẠI</small>
+        </div>
+        <div class="stat-box">
+          <strong>FREE</strong>
+          <small>HOÀN TOÀN MIỄN PHÍ</small>
+        </div>
+      </div>
+
+      <button class="main-button primary" id="getKey">
+<svg class="main-key-icon"
+
+     viewBox="0 0 24 24"
+
+     aria-hidden="true"
+
+     xmlns="http://www.w3.org/2000/svg">
+
+  <path fill="currentColor" d="
+
+    M9 3
+
+    A6 6 0 1 0 13.95 12.4
+
+    L21 19.45
+
+    L19.45 21
+
+    L17.5 19.05
+
+    L15.75 20.8
+
+    L13.2 18.25
+
+    L14.95 16.5
+
+    L12.4 13.95
+
+    A6 6 0 0 0 9 3
+
+    Z
+
+    M9 6.2
+
+    A2.8 2.8 0 1 1 9 11.8
+
+    A2.8 2.8 0 0 1 9 6.2
+
+    Z
+
+  "/>
+
+</svg>
+        <span>LẤY KEY MIỄN PHÍ</span>
+      </button>
+<button class="main-button" id="backupGetKey">
+
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+
+    <path d="M12 3v12"/>
+
+    <path d="M7 10l5 5 5-5"/>
+
+    <path d="M5 21h14"/>
+
+  </svg>
+
+  <span>Tải Xuống</span>
+
+
+</a>
+      <button class="main-button" id="contactAdmin">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.4-3.5 2.5-5.3 6.5-5.3s6.1 1.8 6.5 5.3"/>
+        </svg>
+        <span>LIÊN HỆ ADMIN</span>
+      </button>
+
+      <button class="main-button" id="joinGroup">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="8" r="2.8"/><circle cx="17" cy="9" r="2.3"/>
+          <path d="M3.8 19c.3-3.3 2-5 5.2-5s4.9 1.7 5.2 5M15 14.5c3.2.1 4.8 1.6 5.1 4.5"/>
+        </svg>
+        <span>THAM GIA NHÓM</span>
+      </button>
+
+      <div class="footer-note">Hệ thống key tự động · Miễn phí 100%</div>
+    </div>
+  </section>
+  <div class="copyright">© 2026 AimLock HZZ. All rights reserved.</div>
+</main>
+
+<!-- KEY MODAL -->
+<div class="modal-overlay" id="keyModal" aria-hidden="true">
+  <div class="modal">
+    <button class="close" data-close="keyModal">×</button>
+    <div class="modal-label">GET LICENSE KEY</div>
+    <h2>CHỌN LOẠI KEY</h2>
+    <p>Vui lòng chọn loại key bạn muốn</p>
+
+
+<span class="option-icon key-icon">
+
+<button class="option" data-type="vip">
+
+      <span class="option-icon crown">♛</span>
+
+      <span class="option-info"><b>KEY HZZ</b><small>24H · An Toàn</small></span>
+
+      <span class="next">›</span>
+
+    </button>
+
+    <button class="option" data-type="trll">
+
+     <span class="option-icon crown">⚡︎</span>
+
+      <span class="option-info">
+
+        <b>KEY NVX</b>
+
+        <small>12H · Happ</small>
+
+      </span>
+
+      <span class="next">›</span>
+
+    </button>
+
+    <button class="modal-close" data-close="keyModal">ĐÓNG</button>
+  </div>
+</div>
+
+<!-- GROUP MODAL -->
+<div class="modal-overlay" id="groupModal" aria-hidden="true">
+  <div class="modal">
+    <button class="close" data-close="groupModal">×</button>
+    <div class="modal-label">COMMUNITY</div>
+    <h2>THAM GIA NHÓM</h2>
+    <p>Chọn nền tảng để tham gia cộng đồng</p>
+
+    <a class="option link-option" id="telegramGroup" href="#">
+      <span class="option-icon telegram">
+
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+
+    <path d="M21 3L3.5 10.2C2.6 10.6 2.6 11.3 3.4 11.6L8 13.4L9.8 19C10 19.7 10.4 19.8 10.9 19.3L13.6 16.6L18.2 20C18.8 20.4 19.4 20.1 19.5 19.4L22 4C22.2 3.1 21.6 2.7 21 3Z"></path>
+
+    <path d="M8 13.4L18.8 6.5L11.2 14.8"></path>
+
+  </svg>
+
+</span>
+      <span class="option-info"><b>TELEGRAM</b><small>Tham gia nhóm Telegram</small></span>
+      <span class="next">›</span>
+    </a>
+
+    <a class="option link-option" id="discordGroup" href="#">
+      <span class="option-icon discord">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+
+    <path fill="currentColor" d="M19.54 5.05A16.9 16.9 0 0 0 15.5 3.8l-.5 1.02a15.5 15.5 0 0 0-6 0L8.5 3.8a16.9 16.9 0 0 0-4.04 1.25C1.9 8.8 1.2 12.5 1.55 16.15A16.8 16.8 0 0 0 6.5 18.7l1.2-1.64a10.2 10.2 0 0 1-1.9-.92l.46-.35c3.68 1.7 7.66 1.7 11.3 0l.47.35c-.6.36-1.24.67-1.9.92l1.2 1.64a16.8 16.8 0 0 0 4.95-2.55c.4-4.24-.68-7.9-2.74-11.1zM8.9 14.1c-1.08 0-1.97-1-1.97-2.23s.87-2.23 1.97-2.23 1.98 1 1.97 2.23c0 1.23-.88 2.23-1.97 2.23zm6.2 0c-1.08 0-1.97-1-1.97-2.23s.87-2.23 1.97-2.23 1.98 1 1.97 2.23c0 1.23-.88 2.23-1.97 2.23z"/>
+
+  </svg>
+
+</span>
+      <span class="option-info"><b>DISCORD</b><small>Tham gia nhóm Discord</small></span>
+      <span class="next">›</span>
+    </a>
+
+    <button class="modal-close" data-close="groupModal">ĐÓNG</button>
+  </div>
+</div>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="adminModal" aria-hidden="true">
+  <div class="modal">
+    <button class="close" data-close="adminModal">×</button>
+    <div class="modal-label">CONTACT</div>
+    <h2>LIÊN HỆ ADMIN</h2>
+    <p>Chọn nền tảng để liên hệ</p>
+
+    <a class="option link-option" id="telegramAdmin" href="#">
+      <span class="option-icon telegram">
+
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+
+    <path d="M21 3L3.5 10.2C2.6 10.6 2.6 11.3 3.4 11.6L8 13.4L9.8 19C10 19.7 10.4 19.8 10.9 19.3L13.6 16.6L18.2 20C18.8 20.4 19.4 20.1 19.5 19.4L22 4C22.2 3.1 21.6 2.7 21 3Z"></path>
+
+    <path d="M8 13.4L18.8 6.5L11.2 14.8"></path>
+
+  </svg>
+
+</span>
+      <span class="option-info"><b>TELEGRAM</b><small>Liên hệ qua Telegram</small></span>
+      <span class="next">›</span>
+    </a>
+
+    <a class="option link-option" id="discordAdmin" href="#">
+      <span class="option-icon discord">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+
+    <path fill="currentColor" d="M19.54 5.05A16.9 16.9 0 0 0 15.5 3.8l-.5 1.02a15.5 15.5 0 0 0-6 0L8.5 3.8a16.9 16.9 0 0 0-4.04 1.25C1.9 8.8 1.2 12.5 1.55 16.15A16.8 16.8 0 0 0 6.5 18.7l1.2-1.64a10.2 10.2 0 0 1-1.9-.92l.46-.35c3.68 1.7 7.66 1.7 11.3 0l.47.35c-.6.36-1.24.67-1.9.92l1.2 1.64a16.8 16.8 0 0 0 4.95-2.55c.4-4.24-.68-7.9-2.74-11.1zM8.9 14.1c-1.08 0-1.97-1-1.97-2.23s.87-2.23 1.97-2.23 1.98 1 1.97 2.23c0 1.23-.88 2.23-1.97 2.23zm6.2 0c-1.08 0-1.97-1-1.97-2.23s.87-2.23 1.97-2.23 1.98 1 1.97 2.23c0 1.23-.88 2.23-1.97 2.23z"/>
+
+  </svg>
+
+</span>
+      <span class="option-info"><b>DISCORD</b><small>Liên hệ qua Discord</small></span>
+      <span class="next">›</span>
+    </a>
+
+    <button class="modal-close" data-close="adminModal">ĐÓNG</button>
+  </div>
+</div>
+
+<!-- KEY RESULT MODAL -->
+
+<div class="modal-overlay" id="keyResultModal" aria-hidden="true">
+
+  <div class="modal key-result-modal">
+
+    <button class="close" data-close="keyResultModal">×</button>
+
+    <div class="modal-label">KEY GENERATED</div>
+
+    <h2>NHẬN KEY THÀNH CÔNG</h2>
+
+    <p>Key của bạn đã được tạo thành công</p>
+
+    <div class="key-result-box">
+
+      <span id="generatedKey">---</span>
+
+      <button id="copyKey" type="button">COPY</button>
+
+    </div>
+
+    <button class="modal-close" data-close="keyResultModal">
+
+      ĐÓNG
+
+    </button>
+
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
