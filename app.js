@@ -82,6 +82,27 @@ if(CFG.logo){
   $("logoBox").classList.add("has-image");
 }
 
+const DEVICE_ID_KEY = "getkey_device_id_v1";
+function newDeviceId(){
+  return globalThis.crypto?.randomUUID?.() ||
+    "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{
+      const r=Math.random()*16|0;
+      return (c==="x"?r:(r&3|8)).toString(16);
+    });
+}
+function getDeviceId(){
+  try{
+    let id=localStorage.getItem(DEVICE_ID_KEY);
+    if(!id){
+      id=newDeviceId();
+      localStorage.setItem(DEVICE_ID_KEY,id);
+    }
+    return id;
+  }catch{
+    return newDeviceId();
+  }
+}
+
 /* Luồng Free: backend sẽ trả redirectUrl nếu endpoint đã được cấu hình. */
 document.querySelectorAll("[data-type]").forEach(btn=>{
   btn.addEventListener("click",async()=>{
@@ -94,10 +115,10 @@ document.querySelectorAll("[data-type]").forEach(btn=>{
     }
 
     try{
-      toast("Đang tạo link...");
+      toast("Đang tạo link...");      const deviceId=getDeviceId();
       const res=await fetch(
 
-  `${API}/api/start?type=${encodeURIComponent(type)}`
+  `${API}/api/start?type=${encodeURIComponent(type)}&cid=${encodeURIComponent(deviceId)}`
 
 );
       const data=await res.json();
