@@ -215,3 +215,18 @@ if (menuKey) {
 
 }
 
+
+
+const resetDeviceButton = document.createElement("button");
+resetDeviceButton.type = "button";
+resetDeviceButton.className = "modal-close";
+resetDeviceButton.textContent = "ĐẶT LẠI THIẾT BỊ";
+resetDeviceButton.addEventListener("click", () => {
+  if (!window.confirm("Đặt lại ID trên trình duyệt này? Lần nhận key tiếp theo có thể được tính như thiết bị mới.")) return;
+  try { localStorage.removeItem(DEVICE_ID_KEY); }
+  catch { toast("Trình duyệt không cho đặt lại thiết bị."); return; }
+  closeModal("keyModal");
+  toast("Đã đặt lại thiết bị. Hãy thử lấy key lại.");
+});
+const keyModalContent = $("keyModal")?.querySelector(".modal");
+if (keyModalContent) keyModalContent.appendChild(resetDeviceButton);
